@@ -1,5 +1,7 @@
 # Доработки веб-почты SOGo
 
+[English](README.md) · **Русский**
+
 Один файл `custom-sogo.js` для SOGo из состава
 [mailcow-dockerized](https://github.com/mailcow/mailcow-dockerized): веб-почта
 становится ближе к привычным почтовым службам, при этом сам SOGo не правится.

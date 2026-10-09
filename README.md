@@ -1,5 +1,7 @@
 # SOGo webmail extras
 
+**English** · [Русский](README.ru.md)
+
 A single drop-in `custom-sogo.js` that makes SOGo's webmail (the one shipped
 with [mailcow-dockerized](https://github.com/mailcow/mailcow-dockerized)) look
 and behave closer to the big mail providers — without patching SOGo itself.
@@ -10,7 +12,6 @@ templates in volumes that get overwritten on restart.
 
 > Tested on mailcow `2026-09a` with SOGo 5.12.11.
 > Code comments are in Russian; this README and the install steps are in English.
-> A Russian version of this file: [README.ru.md](README.ru.md).
 
 ## What it adds
 
