@@ -131,6 +131,13 @@ One-line rows with the body preview in grey, folder icons picked by name,
 unread counts on every folder, and the total next to the message count
 (`319 messages / 66` — click the second number to filter to unread).
 
+![Reading pane at the bottom](docs/panes.png)
+
+The same toolbar button cycles the reading pane: right → bottom → off. The
+splitter between the list and the message follows the position — vertical on
+the right, horizontal at the bottom — and the size is remembered separately
+for each.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
