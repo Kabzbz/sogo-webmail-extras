@@ -29,6 +29,11 @@ so new folders get an icon automatically.
 reorder them. Adds a *Configure order* item to the account menu: a dialog with
 the whole tree, drag to reorder, stored per browser.
 
+**One account at a time.** A button in the folder pane header hides every
+account except the one you are working in, so the folder list gets the whole
+height — useful when you have several accounts and dozens of folders. Click
+again to bring them back.
+
 **Resizable panes.** Drag the edges of the folder pane and the message list;
 double-click a splitter to reset. Widths are remembered.
 
