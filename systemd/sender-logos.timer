@@ -1,0 +1,11 @@
+[Unit]
+Description=Ежедневное обновление логотипов отправителей
+
+[Timer]
+# После ночных бэкапов (01:30, 01:50) и выгрузки почты (03:30)
+OnCalendar=*-*-* 04:40:00
+Persistent=true
+RandomizedDelaySec=600
+
+[Install]
+WantedBy=timers.target

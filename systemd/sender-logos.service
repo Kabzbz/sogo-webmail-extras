@@ -1,0 +1,12 @@
+[Unit]
+Description=Логотипы отправителей для SOGo
+After=docker.service
+Wants=docker.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/sender-logos.py
+# Чтение почты через doveadm на большом ящике идёт минутами, поэтому запас времени
+TimeoutStartSec=2400
+Nice=10
+IOSchedulingClass=idle
