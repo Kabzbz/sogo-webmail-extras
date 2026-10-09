@@ -125,7 +125,11 @@ These cost us a day; they are all written down in the code comments too.
 
 ## Screenshots
 
-_To be added._
+![Message list and folder pane](docs/list.png)
+
+One-line rows with the body preview in grey, folder icons picked by name,
+unread counts on every folder, and the total next to the message count
+(`319 messages / 66` — click the second number to filter to unread).
 
 ## License
 
