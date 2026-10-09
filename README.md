@@ -56,6 +56,13 @@ sender split a multi-byte character across two RFC 2047 encoded words (SOGo
 shows garbage, Mail.ru does not — now neither do we). German and French text is
 left alone.
 
+**Tighter chrome.** SOGo spends a lot of height on decoration: a 128 px tall
+header above the folder list and a date block with a 72 px day number. Here the
+date loses the year and shrinks, the top toolbar is set to exactly the height of
+the folder pane header so the two bands line up, and the paddings of the folder
+toolbar and the message-count row are cut. That is a couple of extra message
+rows on a laptop screen.
+
 **Toolbar theme.** A gradient band across the top toolbar and the folder pane
 header, drawn in CSS with an inline SVG dot pattern — nothing to host.
 
