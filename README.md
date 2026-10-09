@@ -138,6 +138,11 @@ splitter between the list and the message follows the position — vertical on
 the right, horizontal at the bottom — and the size is remembered separately
 for each.
 
+![Folder order dialog](docs/order.png)
+
+*Configure order* from the account menu. Drag within one level — nested
+folders travel with their parent. Reset puts everything back to alphabetical.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
