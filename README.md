@@ -43,7 +43,8 @@ window is sized to your screen instead of SOGo's hardcoded 680×520).
 
 **Message list in one line.** Sender, subject and date on one row, with the
 beginning of the message body in grey underneath — like mail.ru. Thin separator
-under each row.
+under each row. Unread messages stay unread: fetching the body sets `\Seen`
+over IMAP, so the flag is put back right after.
 
 **Unread counts everywhere.** SOGo only counts the INBOX and folders you have
 opened; this asks the server for all of them, adds a subtree total on collapsed
@@ -109,6 +110,21 @@ script never re-downloads what it already has; failures are retried after
 
 **Do not commit the generated file.** The embedded block contains the domains
 and e-mail addresses of everyone who writes to you.
+
+## Console helpers
+
+Everything below is available in the browser console; handy when something
+looks wrong and you do not want to guess.
+
+| Call | What it does |
+|---|---|
+| `sgPanesReset()` | forgets saved pane widths, the reading-pane position and the one-account mode, then reloads — use it if the layout ends up off-screen |
+| `sgFolderOrder()` | opens the folder-order dialog without the menu item |
+| `sgPreviewOff()` | stops fetching body previews for this tab |
+| `sgCountDebug()` | prints what the unread counter sees: how many header rows it found and the count of the selected folder |
+| `sgShowSubject(n)` | prints the n-th visible subject with its character codes and the result of the encoding repair |
+| `sgDecodeHeader(raw)` | runs the tolerant RFC 2047 decoder over a raw header string |
+| `sgFixMojibake(text)` | runs the mojibake repair over any string |
 
 ## Things worth knowing before you hack on this
 
